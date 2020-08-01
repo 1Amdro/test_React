@@ -1,0 +1,14 @@
+.input_del {
+    display: none;
+}
+
+.label_del {
+    position: relative;
+    top: 2px;
+    background-image: url("../../Images/checkboxDelete.svg");
+    background-repeat: no-repeat;
+}
+
+.label_del:hover {
+    background-image: url("../../Images/checkboxDelete_hover.svg");
+}

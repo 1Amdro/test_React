@@ -1,0 +1,44 @@
+.item{
+    display: grid;
+    grid-template-columns: 125px 104px 24px 20px 20px;
+    grid-column-gap: 15px;
+    margin: 15px 0 15px 15px;
+}
+
+.input_id, .input_name, .input_type, .input_color{
+    width: 50%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+}
+
+.input_name:focus, .input_type:focus, .input_color:focus {
+    border: 2px solid #4d9ec4;
+}
+
+.input_name, .input_type, .input_color {
+    color: #C5E3FF;
+    font-size: 15px;
+    text-align: center;
+    height: 25px;
+    background: linear-gradient(180deg, #4a778b 0%, #8457a0fc 100%);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.edited_icon {
+    width: 25px;
+    height: 25px;
+    background: url("../../Images/redacted_icon.svg");
+    background-size: contain;
+    position: relative;
+    top: 2px;
+}
+
+@media screen and (max-width: 339px) {
+    .item {
+        grid-template-columns: 1fr 0.8fr 24px 23px 25px;
+    }
+
+}
