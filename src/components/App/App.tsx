@@ -70,29 +70,27 @@ const App: React.FC = () => {
     }
   }, [])
 
-  const compareName = function (emp1: any, emp2: any) {
+  const compareName = (emp1: any, emp2: any): number => {
     if (emp1.name > emp2.name) { return -1; }
     if (emp1.name < emp2.name) {return 1; }
     return 0;
   }
 
-  const compareNameReverse = function (emp1: any, emp2: any) {
+  const compareNameReverse = (emp1: any, emp2: any): number => {
     if (emp1.name < emp2.name) { return -1; }
     if (emp1.name > emp2.name) {return 1; }
     return 0;
   }
   const onClickSort = () => {
-    let sortedList = null;
     const newItem: any = data.map(item => item);
     if (!sortData) {
-      sortedList = newItem.sort(compareName)
+      newItem.sort(compareName)
       setSortData(true)
     } else {
-      sortedList = newItem.sort(compareNameReverse)
+      newItem.sort(compareNameReverse)
       setSortData(false)
     }
-    setData(sortedList)
-
+    setData(newItem)
   }
 
   const onClickAdd = (name: string, type: string):void => {
