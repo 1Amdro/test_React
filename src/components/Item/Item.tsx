@@ -20,22 +20,21 @@ const Item: React.FC<IItemProps> =
     const [currentName, setCurName] = useState(name);
     const [currentType, setCurType] = useState(type);
     const [currentColor, setCurColor] = useState(color);
-    const [currentEdited, setCurEdited] = useState(editedShow)
+    const [currentEdited, setCurEdited] = useState(editedShow);
 
     const onKeyEvent =
         (event: any, arg: string,  id: number, prop: changeProp) => {
         if (event.key === "Enter") {
             changeItem(arg, id, prop)
             setCurEdited(true);
-            setTimeout(hideEditedIcon, 1000)
-
+            setTimeout(hideEditedIcon, 1000);
         }
     }
 
     const onDoubleClick = (arg: string,  id: number, prop: changeProp) => {
-        changeItem(arg, id, prop)
+        changeItem(arg, id, prop);
         setCurEdited(true);
-        setTimeout(hideEditedIcon, 1000)
+        setTimeout(hideEditedIcon, 1000);
     }
 
     const hideEditedIcon = () => {

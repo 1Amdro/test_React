@@ -36,6 +36,13 @@
     top: 2px;
 }
 
+@media screen and (max-width: 383px) {
+    .item {
+        grid-template-columns: 1fr 0.8fr 24px 23px 25px;
+    }
+}
+
+
 @media screen and (max-width: 339px) {
     .item {
         grid-template-columns: 1fr 0.8fr 24px 23px 25px;
