@@ -1,0 +1,18 @@
+body {
+    margin: 0 0;
+}
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(43, 49, 45, 0.82) 9.67%,
+    rgba(91, 62, 62, 0.9) 27.08%,
+    rgba(14, 30, 55, 0.84) 52.6%,
+    rgba(54, 86, 73, 0.92) 77.64%,
+    rgba(3, 0, 2, 0.67) 100%);
+}
+
+.title {
+    margin-top: 0 ;
+    color: #D9CDA5;
+    text-align: center;
+}
